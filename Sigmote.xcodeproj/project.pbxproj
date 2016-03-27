@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFE029C1C9FB3920068B136 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE029B1C9FB3920068B136 /* AppDelegate.m */; };
+		FAFE029F1C9FB3920068B136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE029E1C9FB3920068B136 /* main.m */; };
+		FAFE02A11C9FB3920068B136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE02A01C9FB3920068B136 /* Assets.xcassets */; };
+		FAFE02A41C9FB3930068B136 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFE02A21C9FB3930068B136 /* MainMenu.xib */; };
+		FAFE02AD1C9FB3EB0068B136 /* PSClasseSigmaController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE02AC1C9FB3EB0068B136 /* PSClasseSigmaController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FAFE02971C9FB3920068B136 /* Sigmote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sigmote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFE029A1C9FB3920068B136 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAFE029B1C9FB3920068B136 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAFE029E1C9FB3920068B136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAFE02A01C9FB3920068B136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFE02A31C9FB3930068B136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FAFE02A51C9FB3930068B136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFE02AB1C9FB3EB0068B136 /* PSClasseSigmaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSClasseSigmaController.h; sourceTree = "<group>"; };
+		FAFE02AC1C9FB3EB0068B136 /* PSClasseSigmaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSClasseSigmaController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFE02941C9FB3920068B136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFE028E1C9FB3920068B136 = {
+			isa = PBXGroup;
+			children = (
+				FAFE02991C9FB3920068B136 /* Source */,
+				FAFE02981C9FB3920068B136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFE02981C9FB3920068B136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE02971C9FB3920068B136 /* Sigmote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFE02991C9FB3920068B136 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE029A1C9FB3920068B136 /* AppDelegate.h */,
+				FAFE029B1C9FB3920068B136 /* AppDelegate.m */,
+				FAFE02AB1C9FB3EB0068B136 /* PSClasseSigmaController.h */,
+				FAFE02AC1C9FB3EB0068B136 /* PSClasseSigmaController.m */,
+				FAFE02A01C9FB3920068B136 /* Assets.xcassets */,
+				FAFE02A21C9FB3930068B136 /* MainMenu.xib */,
+				FAFE02A51C9FB3930068B136 /* Info.plist */,
+				FAFE029D1C9FB3920068B136 /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FAFE029D1C9FB3920068B136 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAFE029E1C9FB3920068B136 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFE02961C9FB3920068B136 /* Sigmote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFE02A81C9FB3930068B136 /* Build configuration list for PBXNativeTarget "Sigmote" */;
+			buildPhases = (
+				FAFE02931C9FB3920068B136 /* Sources */,
+				FAFE02941C9FB3920068B136 /* Frameworks */,
+				FAFE02951C9FB3920068B136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sigmote;
+			productName = Sigmote;
+			productReference = FAFE02971C9FB3920068B136 /* Sigmote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFE028F1C9FB3920068B136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Pomm'Soft";
+				TargetAttributes = {
+					FAFE02961C9FB3920068B136 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FAFE02921C9FB3920068B136 /* Build configuration list for PBXProject "Sigmote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFE028E1C9FB3920068B136;
+			productRefGroup = FAFE02981C9FB3920068B136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFE02961C9FB3920068B136 /* Sigmote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFE02951C9FB3920068B136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE02A11C9FB3920068B136 /* Assets.xcassets in Resources */,
+				FAFE02A41C9FB3930068B136 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFE02931C9FB3920068B136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFE029F1C9FB3920068B136 /* main.m in Sources */,
+				FAFE029C1C9FB3920068B136 /* AppDelegate.m in Sources */,
+				FAFE02AD1C9FB3EB0068B136 /* PSClasseSigmaController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAFE02A21C9FB3930068B136 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFE02A31C9FB3930068B136 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFE02A61C9FB3930068B136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAFE02A71C9FB3930068B136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAFE02A91C9FB3930068B136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pommsoft.sigmote.Sigmote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAFE02AA1C9FB3930068B136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pommsoft.sigmote.Sigmote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFE02921C9FB3920068B136 /* Build configuration list for PBXProject "Sigmote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE02A61C9FB3930068B136 /* Debug */,
+				FAFE02A71C9FB3930068B136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFE02A81C9FB3930068B136 /* Build configuration list for PBXNativeTarget "Sigmote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFE02A91C9FB3930068B136 /* Debug */,
+				FAFE02AA1C9FB3930068B136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFE028F1C9FB3920068B136 /* Project object */;
+}
