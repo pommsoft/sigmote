@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA4631871CA81ACF00883A28 /* PSAwakener.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4631861CA81ACF00883A28 /* PSAwakener.m */; };
+		FA4631891CA8480C00883A28 /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA4631881CA8480C00883A28 /* Defaults.plist */; };
 		FAFE029C1C9FB3920068B136 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE029B1C9FB3920068B136 /* AppDelegate.m */; };
 		FAFE029F1C9FB3920068B136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFE029E1C9FB3920068B136 /* main.m */; };
 		FAFE02A11C9FB3920068B136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFE02A01C9FB3920068B136 /* Assets.xcassets */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA4631851CA81ACF00883A28 /* PSAwakener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSAwakener.h; sourceTree = "<group>"; };
+		FA4631861CA81ACF00883A28 /* PSAwakener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSAwakener.m; sourceTree = "<group>"; };
+		FA4631881CA8480C00883A28 /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
 		FAFE02971C9FB3920068B136 /* Sigmote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sigmote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFE029A1C9FB3920068B136 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAFE029B1C9FB3920068B136 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,8 +63,11 @@
 			children = (
 				FAFE029A1C9FB3920068B136 /* AppDelegate.h */,
 				FAFE029B1C9FB3920068B136 /* AppDelegate.m */,
+				FA4631851CA81ACF00883A28 /* PSAwakener.h */,
+				FA4631861CA81ACF00883A28 /* PSAwakener.m */,
 				FAFE02AB1C9FB3EB0068B136 /* PSClasseSigmaController.h */,
 				FAFE02AC1C9FB3EB0068B136 /* PSClasseSigmaController.m */,
+				FA4631881CA8480C00883A28 /* Defaults.plist */,
 				FAFE02A01C9FB3920068B136 /* Assets.xcassets */,
 				FAFE02A21C9FB3930068B136 /* MainMenu.xib */,
 				FAFE02A51C9FB3930068B136 /* Info.plist */,
@@ -135,6 +143,7 @@
 			files = (
 				FAFE02A11C9FB3920068B136 /* Assets.xcassets in Resources */,
 				FAFE02A41C9FB3930068B136 /* MainMenu.xib in Resources */,
+				FA4631891CA8480C00883A28 /* Defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4631871CA81ACF00883A28 /* PSAwakener.m in Sources */,
 				FAFE029F1C9FB3920068B136 /* main.m in Sources */,
 				FAFE029C1C9FB3920068B136 /* AppDelegate.m in Sources */,
 				FAFE02AD1C9FB3EB0068B136 /* PSClasseSigmaController.m in Sources */,
