@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "PSClasseSigmaController.h"
+#import "PSAwakener.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 @property (strong) NSStatusItem *statusItem;
 
 @property (strong) PSClasseSigmaController *sigmaController;
+@property (strong) PSAwakener *awakener;
 
 @end
 
@@ -24,6 +26,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [[NSUserDefaults standardUserDefaults] registerDefaults:[NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Defaults" ofType:@"plist"]]];
+
+    self.awakener = [PSAwakener new];
+
     self.sigmaController = [[PSClasseSigmaController alloc] init];
     [self.sigmaController connectWithCallback:^(PSClasseSigmaController *controller) {
         // enable the menu!
@@ -40,7 +46,6 @@
     item.target = self;
 
     self.statusItem.menu = menu;
-
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -51,7 +56,7 @@
 
 - (void)wake:(id)sender
 {
-
+    [self.awakener wakeAll];
 }
 
 @end

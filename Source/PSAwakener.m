@@ -72,11 +72,45 @@
 
 @end
 
+@interface PSAwakener ()
+
+@property (nonatomic, strong) NSMutableArray *wakeables;
+
+@end
+
 @implementation PSAwakener
+
+- (instancetype)init
+{
+    self = [super init];
+
+    if (nil != self) {
+        [self loadWakeables];
+    }
+
+    return self;
+}
+
+- (void)loadWakeables
+{
+    NSMutableArray *wakeables = [NSMutableArray new];
+
+    NSArray *wakeableDictionaries = [[NSUserDefaults standardUserDefaults] objectForKey:@"devices"];
+    for (NSDictionary *dict in wakeableDictionaries) {
+        id <PSWakeable> wakeable = [[PSWakeable alloc] initWithDictionaryRepresentation:dict];
+        if (nil != wakeable) {
+            [wakeables addObject:wakeable];
+        }
+    }
+
+    self.wakeables = wakeables;
+}
 
 - (void)wakeAll
 {
-
+    for (id <PSWakeable> wakeable in self.wakeables) {
+        [self wake:wakeable];
+    }
 }
 
 - (void)wake:(id <PSWakeable>)wakeable
@@ -92,7 +126,7 @@
 
     // next, append the mac address 16 times
     for (int i = 1; i < 17; i++) {
-        [wakeable copyMacAddressTo:&(wolPacket[i])];
+        [wakeable copyMacAddressTo:&(wolPacket[i*6])];
     }
 
     // now the wol packet is ready
@@ -105,7 +139,6 @@
     /** you need to set this so you can broadcast **/
     if (setsockopt(udpSocket, SOL_SOCKET, SO_BROADCAST, &broadcast, sizeof broadcast) == -1) {
         perror("setsockopt (SO_BROADCAST)");
-        exit(1);
     }
     udpClient.sin_family = AF_INET;
     udpClient.sin_addr.s_addr = INADDR_ANY;
@@ -118,13 +151,12 @@
     /** set server end point (the broadcast addres)**/
     udpServer.sin_family = AF_INET;
     // TODO-AA: find own IP address and compute broadcast address
-    udpServer.sin_addr.s_addr = 0x0A0001FF; // 10.0.1.255
+//    udpServer.sin_addr.s_addr = 0x0A0001FF; // 10.0.1.255
+    udpServer.sin_addr.s_addr = 0xFFFFFFFF; // 255.255.255.255
     udpServer.sin_port = htons(9);
 
     /** send the packet **/
     sendto(udpSocket, wolPacket, sizeof(unsigned char) * 102, 0, (struct sockaddr*)&udpServer, sizeof(udpServer));
-    
-
 }
 
 @end

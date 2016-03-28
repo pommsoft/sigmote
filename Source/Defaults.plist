@@ -6,19 +6,6 @@
 	<array>
 		<dict>
 			<key>name</key>
-			<string>classe sigma</string>
-			<key>mac</key>
-			<array>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>0</integer>
-			</array>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>mini</string>
 			<key>mac</key>
 			<array>
